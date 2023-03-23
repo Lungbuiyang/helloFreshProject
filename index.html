@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>  
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+
+	    <!-- header section-->
+        <div id="header">
+            <div class="headContainer">
+                <div class="navbar">
+                    <div class="logo">
+                      <img src="logo.png" alt="logo">
+                    </div>
+                    <nav>
+                        <div class="nav-links" id="navLinks">
+                            <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="#">Our Plans</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Our Menus</a></li>
+                            <li><a href="#">Gift Card</a></li>
+                            <li><a href="#">Our Team</a></li>
+                        </ul>
+                        </div>
+                        <i class="fa fa-bars" onclick="showMenu()"></i>
+                    </nav>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#" class="login-btn">login</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- home section-->
+        <div id="home">
+        	<div class="heading">
+        		<h2>No need to fret<br> about your meal</h2>
+        		<p>Take the stress out of mealtime</p>
+        	</div>
+        	<div class="button">
+        		 <a href="#" class="plan-btn">View our Plans</a>
+        	</div>
+        </div>
+
+        <!-- cards section-->
+        <div id="cards">
+            <div class="heading1">
+                <h1>Why Hello Fresh</h1>
+            </div>
+            <div class="cards-row">
+                <div class="cards-col">
+                    <i class="fa-solid fa-drumstick-bite"></i>
+                    <h3>No skimpin’ on the chicken!</h3>
+                    <p>Or steak, or fish, or plant protein.</p>
+                </div>
+                <div class="cards-col">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h3>No commitment whatsoever</h3>
+                    <p>Skipping weeks or cancelling is super easy.</p>
+                </div>
+                <div class="cards-col">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>The most 5-star reviews</h3>
+                    <p>Our huge recipe selection wows week after week.</p>
+                </div>
+                <div class="cards-col">
+                    <i class="fa-solid fa-spray-can-sparkles"></i>
+                    <h3>Fresh and affordable</h3>
+                    <p>Chef-created deliciousness from $7.49 per meal.</p>
+                </div>
+            </div>  
+        </div>
+
+        <!-- plan section  -->
+        <div id="plan">
+            <div class="planRow">
+                <div class="planCol-2">
+                    <img src="images.jpg" alt="">
+                </div>
+            <div class="planCol-2">
+                <div class="features">
+                    <h1>What’s inside each box?</h1>
+                    <p>✓ Easy-to-follow recipes with clear nutritional info</p>
+                    <p>✓ High-quality ingredients sourced straight from the farm</p>
+                    <p>✓ Convenient meal kits that fit perfectly in the fridge</p>
+                    <p>✓ A fun cooking experience that makes you feel unstoppable</p>
+                    <a href="#">✓ Innovative packaging designed to reduce waste</a> 
+                    <a href="#" class="planBtn">View our plans</a>     
+                </div>
+            </div>
+            </div>        
+        </div>
+
+        <!-- Menus Section -->
+        <div class="menus">
+            <div class="menuRows">
+                <div class="menuHeading">  
+                    <h1>Over 30+ fresh recipes every week</h1>
+                    <p>Easy meals designed by professional chefs and nutritionists</p>
+                </div>
+                <div class="menuContainer">
+                    <div class="menuItems">
+                        <img src="menu2.jpg">
+                    </div>
+                    <div class="menuDetails">
+                        <h2>FAMILY FRIENDLY</h2>
+                        <p>KID TESTED RECIPES</p>
+                    </div>
+                </div>
+                <div class="menuContainer">
+                    <div class="menuItems">
+                        <img src="menu3.jpg">
+                    </div>
+                    <div class="menuDetails">
+                        <h2>FIT & WHOLESOME</h2>
+                        <p>FOR A BALANCE LIFECYCLE</p>
+                    </div>
+                </div>
+                <div class="menuContainer">
+                    <div class="menuItems">
+                        <img src="menu4.jpg">
+                    </div>
+                    <div class="menuDetails">
+                        <h2>QUICK AND EASY</h2>
+                        <p>FOR BUSY WEEKNIGHTS</p>
+                    </div>
+                </div>
+                <div class="menuContainer">
+                    <div class="menuItems">
+                        <img src="menu5.jpg">
+                    </div>
+                    <div class="menuDetails">
+                        <h2>MEAT & VEGGIES</h2>
+                        <p>OUR MOST POPULAR PLAN</p>
+                    </div>
+                </div>  
+                    <div class="menuButton">
+                        <a href="#" class="plan-btn">View our Menus</a>
+                    </div>         
+            </div>
+        </div>
+
+        <!-- Accordion section -->
+        <div id="accordion">
+            <hr/>
+            <div class="accorHeading">
+                <h2>More questions?</h2>
+            </div>
+            <ul class="accordion">
+                <li>
+                    <input type="radio" name="accordion" id="first" checked>
+                    <label for="first">products</label>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="second">
+                    <label for="second">products</label>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="third">
+                    <label for="third">products</label>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="fourth">
+                    <label for="fourth">products</label>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="five">
+                    <label for="five">products</label>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="six">
+                    <label for="six">products</label>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- footer -->
+        <section id="footer">
+            <div class="footer">
+                <div class="footContainer">
+                    <div class="footRow">
+                        <div class="footer-col">
+                            <h4>Hello Fresh</h4>
+                            <ul>
+                                <li><a href="#">Recipes</a></li>
+                                <li><a href="#">Students</a></li>
+                                <li><a href="#">Hero Discount</a></li>
+                                <li><a href="#">Delivery Options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>About Company</h4>
+                            <ul>
+                                <li><a href="#">HelloFresh Group</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Career</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li><a href="#">Help Center & FAQ</a></li>
+                                <li><a href="#">Partnership Inquiries</a></li>
+                                <li><a href="#">Information</a></li>
+                                <li><a href="#">Corporate Sales</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow us on Social media</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/bui.tpanmei/" target="_blank"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/tpnmy/" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a>
+                                <a href="https://github.com/Lungbuiyang" target="_blank"><i class="fa-brands fa-2x fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/lungbuiyangtpanmei/" target="_blank"><i class="fa-brands fa-2x fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.left = "0";
+        }
+        function hideMenu(){
+            navLinks.style.left = "-100%";
+        }
+    </script>
+
+
+</body>
+</html>
