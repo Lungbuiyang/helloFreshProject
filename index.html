@@ -1,258 +1,468 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>  
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloFreshProject</title>
+    <link rel="icon" href="images/logo.png">
 
-		<link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 </head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- bootstrap min.css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- owl carousel theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- custom css -->
+<link rel="stylesheet" href="styleProject.css">
+
 <body>
 
-	    <!-- header section-->
-        <div id="header">
-            <div class="headContainer">
-                <div class="navbar">
-                    <div class="logo">
-                      <img src="logo.png" alt="logo">
-                    </div>
-                    <nav>
-                        <div class="nav-links" id="navLinks">
-                            <i class="fa fa-times" onclick="hideMenu()"></i>
-                        <ul>
-                            <li><a href="#">Our Plans</a></li>
-                            <li><a href="#">How it works</a></li>
-                            <li><a href="#">Our Menus</a></li>
-                            <li><a href="#">Gift Card</a></li>
-                            <li><a href="#">Our Team</a></li>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll navlist"
+                    style="--bs-scroll-height: 500px;">
+                    <li class="nav-item">
+                        <a class="nav-link active navtext" aria-current="page" href="#">Our Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active navtext" href="#">How it works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle navtext" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item navtext" href="#">Our Menu</a></li>
+                            <li><a class="dropdown-item navtext" href="#">Cook Book</a></li>
                         </ul>
-                        </div>
-                        <i class="fa fa-bars" onclick="showMenu()"></i>
-                    </nav>
-                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a href="#" class="login-btn">login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active navtext" href="#" tabindex="-1" aria-disabled="true">Gift Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active navtext" href="#" tabindex="-1" aria-disabled="true">Our team</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-shopping"></i></a>
+
+                    <li class="nav-but">
+                        <a class="btn" href="#">LOGIN</a>
+                    </li>
+                    <li class="mydarkButton">
+                        <button onclick="changeMode()"><i class="fa-solid fa-lightbulb"></i></button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/homepage.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block carouSlide">
+                <h5 class="">No need to fret <br>
+                    about your meal</h5>
+                <p class="">Take the stress out of mealtime.</p>
+                <a class="btn btn-success plan-btn" href="#">View our Plan</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- why Hello Fresh -->
+    <div class="container card-container border-4-4 shadow">
+        <h2 class="card-heading">Why Hello Fresh</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100 whyHelloCard">
+                    <i class="fa-solid fa-drumstick-bite card-icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">No skimpin’ on the chicken! Or steak, or fish, or plant protein.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 whyHelloCard">
+                    <i class="fa-solid fa-calendar-days card-icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">No commitment whatsoever, Skipping weeks or cancelling is super easy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 whyHelloCard">
+                    <i class="fa-solid fa-star card-icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">The most 5-star reviews, Our huge recipe selection wows week after week.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 whyHelloCard">
+                    <i class="fa-solid fa-spray-can-sparkles card-icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">Fresh and affordable, Chef-created deliciousness from $7.49 per meal.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- home section-->
-        <div id="home">
-        	<div class="heading">
-        		<h2>No need to fret<br> about your meal</h2>
-        		<p>Take the stress out of mealtime</p>
-        	</div>
-        	<div class="button">
-        		 <a href="#" class="plan-btn">View our Plans</a>
-        	</div>
-        </div>
-
-        <!-- cards section-->
-        <div id="cards">
-            <div class="heading1">
-                <h1>Why Hello Fresh</h1>
+    <!-- plan section -->
+    <div class="container plan-container border-4 shadow">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img src="images/images.jpg" class="card-img-top plan-img" alt="...">
             </div>
-            <div class="cards-row">
-                <div class="cards-col">
-                    <i class="fa-solid fa-drumstick-bite"></i>
-                    <h3>No skimpin’ on the chicken!</h3>
-                    <p>Or steak, or fish, or plant protein.</p>
-                </div>
-                <div class="cards-col">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <h3>No commitment whatsoever</h3>
-                    <p>Skipping weeks or cancelling is super easy.</p>
-                </div>
-                <div class="cards-col">
-                    <i class="fa-solid fa-star"></i>
-                    <h3>The most 5-star reviews</h3>
-                    <p>Our huge recipe selection wows week after week.</p>
-                </div>
-                <div class="cards-col">
-                    <i class="fa-solid fa-spray-can-sparkles"></i>
-                    <h3>Fresh and affordable</h3>
-                    <p>Chef-created deliciousness from $7.49 per meal.</p>
-                </div>
-            </div>  
-        </div>
-
-        <!-- plan section  -->
-        <div id="plan">
-            <div class="planRow">
-                <div class="planCol-2">
-                    <img src="images.jpg" alt="">
-                </div>
-            <div class="planCol-2">
-                <div class="features">
-                    <h1>What’s inside each box?</h1>
-                    <p>✓ Easy-to-follow recipes with clear nutritional info</p>
-                    <p>✓ High-quality ingredients sourced straight from the farm</p>
-                    <p>✓ Convenient meal kits that fit perfectly in the fridge</p>
-                    <p>✓ A fun cooking experience that makes you feel unstoppable</p>
-                    <a href="#">✓ Innovative packaging designed to reduce waste</a> 
-                    <a href="#" class="planBtn">View our plans</a>     
+            <div class="col-lg-6 col-md-6 plan-text">
+                <h1>What’s inside each box?</h1>
+                <p>✓ Easy-to-follow recipes with clear nutritional info</p>
+                <p>✓ High-quality ingredients sourced straight from the farm</p>
+                <p>✓ Convenient meal kits that fit perfectly in the fridge</p>
+                <p>✓ A fun cooking experience that makes you feel unstoppable</p>
+                <a href="#">✓ Innovative packaging designed to reduce waste</a>
+                <div class="card-body">
+                    <a href="#" class="btn btn-success plan-btn" style="width: 100%;">View Our Plans</a>
                 </div>
             </div>
-            </div>        
         </div>
+    </div>
 
-        <!-- Menus Section -->
-        <div class="menus">
-            <div class="menuRows">
-                <div class="menuHeading">  
-                    <h1>Over 30+ fresh recipes every week</h1>
-                    <p>Easy meals designed by professional chefs and nutritionists</p>
-                </div>
-                <div class="menuContainer">
-                    <div class="menuItems">
-                        <img src="menu2.jpg">
-                    </div>
-                    <div class="menuDetails">
-                        <h2>FAMILY FRIENDLY</h2>
-                        <p>KID TESTED RECIPES</p>
-                    </div>
-                </div>
-                <div class="menuContainer">
-                    <div class="menuItems">
-                        <img src="menu3.jpg">
-                    </div>
-                    <div class="menuDetails">
-                        <h2>FIT & WHOLESOME</h2>
-                        <p>FOR A BALANCE LIFECYCLE</p>
-                    </div>
-                </div>
-                <div class="menuContainer">
-                    <div class="menuItems">
-                        <img src="menu4.jpg">
-                    </div>
-                    <div class="menuDetails">
-                        <h2>QUICK AND EASY</h2>
-                        <p>FOR BUSY WEEKNIGHTS</p>
-                    </div>
-                </div>
-                <div class="menuContainer">
-                    <div class="menuItems">
-                        <img src="menu2.jpg">
-                    </div>
-                    <div class="menuDetails">
-                        <h2>MEAT & VEGGIES</h2>
-                        <p>OUR MOST POPULAR PLAN</p>
-                    </div>
-                </div>  
-                    <div class="menuButton">
-                        <a href="#" class="plan-btn">View our Menus</a>
-                    </div>         
-            </div>
-        </div>
 
-        <!-- Accordion section -->
-        <div id="accordion">
-            <hr/>
-            <div class="accorHeading">
-                <h2>More questions?</h2>
-            </div>
-            <ul class="accordion">
-                <li>
-                    <input type="radio" name="accordion" id="first" checked>
-                    <label for="first">products</label>
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="accordion" id="second">
-                    <label for="second">products</label>
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="accordion" id="third">
-                    <label for="third">products</label>
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="accordion" id="fourth">
-                    <label for="fourth">products</label>
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="accordion" id="five">
-                    <label for="five">products</label>
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="accordion" id="six">
-                    <label for="six">products</label>
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    <!-- Menu section owl carousel -->
 
-        <!-- footer -->
-        <section id="footer">
-            <div class="footer">
-                <div class="footContainer">
-                    <div class="footRow">
-                        <div class="footer-col">
-                            <h4>Hello Fresh</h4>
-                            <ul>
-                                <li><a href="#">Recipes</a></li>
-                                <li><a href="#">Students</a></li>
-                                <li><a href="#">Hero Discount</a></li>
-                                <li><a href="#">Delivery Options</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4>About Company</h4>
-                            <ul>
-                                <li><a href="#">HelloFresh Group</a></li>
-                                <li><a href="#">Press</a></li>
-                                <li><a href="#">Career</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4>Contact Us</h4>
-                            <ul>
-                                <li><a href="#">Help Center & FAQ</a></li>
-                                <li><a href="#">Partnership Inquiries</a></li>
-                                <li><a href="#">Information</a></li>
-                                <li><a href="#">Corporate Sales</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4>Follow us on Social media</h4>
-                            <div class="social-links">
-                                <a href="https://www.facebook.com/bui.tpanmei/" target="_blank"><i class="fa-brands fa-2x fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/tpnmy/" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a>
-                                <a href="https://github.com/Lungbuiyang" target="_blank"><i class="fa-brands fa-2x fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/lungbuiyangtpanmei/" target="_blank"><i class="fa-brands fa-2x fa-linkedin"></i></a>
-                            </div>
+    <div class="container menu-container">
+        <h3 class="menu-heading">Over 30+ fresh recipes every week</h3>
+        <p class="menu-para">Easy meals designed by professional chefs and nutritionists</p>
+        <div class="row">
+            <div class="owl-carousel owl-theme">
+                <div class="item mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="images/menu1.jpg" alt="images">
+                        <div class="card-body">
+                            <h4 class="CDescription">love</h4>
                         </div>
                     </div>
                 </div>
+                <!-- items end -->
+                <div class="item mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="images/menu2.jpg" alt="images">
+                        <div class="card-body">
+                            <h4 class="CDescription">deliciousness</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- items end -->
+                <div class="item mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="images/menu3.jpg" alt="images">
+                        <div class="card-body">
+                            <h4 class="CDescription">healthy</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- items end -->
+                <div class="item mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="images/menu4.jpg" alt="images">
+                        <div class="card-body">
+                            <h4 class="CDescription">family menu</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- items end -->
+                <div class="item mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="images/menu5.jpg" alt="images">
+                        <div class="card-body">
+                            <h4 class="CDescription">coconut dish</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- items end -->
+                <div class="item mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="images/menu1.jpg" alt="images">
+                        <div class="card-body">
+                            <h4 class="CDescription">biryani</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- items end -->
             </div>
-        </section>
+            <div class="menu-btn text-center">
+                <a href="#" class="btn btn-success">View Our Menu</a>
+            </div>
 
-        <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.left = "0";
-        }
-        function hideMenu(){
-            navLinks.style.left = "-100%";
-        }
+        </div>
+    </div>
+
+    <!-- accordion -->
+    <div class="container accordion-container border-4 shadow">
+        <h1 class="accor-heading">More questions?</h1>
+        <div class="row">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How does HelloFresh’s meal kit delivery service work?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Our meal delivery service allows you to skip meal planning and grocery shopping. HelloFresh
+                            delivers step-by-step recipes and fresh, pre-portioned ingredients right to your door.
+                            First, you set your meal plan preferences with options for carnivores, vegetarians,
+                            calorie-counters, and more. You’ll choose from 30+ delicious weekly recipes carefully put
+                            together by our chefs. Then, you’ll receive those recipes with easy-to-follow instructions
+                            on the day of your choosing. You can skip a week or cancel anytime if your needs change.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Which food meal plans & recipes does HelloFresh offer?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            HelloFresh has the most variety in terms of recipes—from meat & veggies, to low-carb and
+                            low-calorie options, and more. You can choose from six delicious meal plan preferences—each
+                            one offers 27+ sumptuous weekly recipes crafted by professional chefs and nutrition
+                            specialists. With HelloFresh, you have the power to choose according to your preference and
+                            lifestyle. Our low-calorie meal kits, for instance, feature dietician-approved recipes that
+                            contain only about 650 calories. Meanwhile, our family-friendly meal delivery preference
+                            allows you to get easy and delicious recipes that even your kids will love. What’s more: you
+                            can always upgrade to Gourmet Recipes and include add-ons like garlic bread.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How many times a week does HelloFresh deliver?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Once a week. You can expect your meal kits to arrive between 8 am to 8 pm. We deliver
+                            anywhere in the United States, except Alaska and Hawaii.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Does HelloFresh give nutrition & calorie information?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Absolutely! We guarantee that every single one of our meal kits is appropriately labeled.
+                            They have all the nutritional facts you’re looking for like calorie content and the amount
+                            of carbohydrates, protein, dietary fiber, sugar, sodium, unsaturated and saturated fat, and
+                            cholesterol.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Why should I choose HelloFresh as my meal kit service?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            HelloFresh is America’s #1 meal kit, offering the widest variety of recipes to over a
+                            million customers around the country. We have the most five-star recipes and the most
+                            five-star reviews among meal kits according to Trustpilot. We are clearly the internet’s
+                            most popular meal kit. HelloFresh was recognized as having America’s Best Customer Service
+                            among meal kit companies by Newsweek in its “America’s Best Customer Service 2020” article.
+                            It was also named the #1 meal kit by USA Today in its “Readers’ Choice Awards” for both 2019
+                            and 2020. Beyond the awards and accolades, HelloFresh supports healthier and more
+                            sustainable lifestyles. Did you know that our meal kits guarantee less food waste? The
+                            average American throws away more than 200 pounds of food each year, and the average
+                            American household spends more than $2,200 every year on the food they throw away. In
+                            contrast, HelloFresh delivers the perfect amount of ingredients — everything you need for
+                            dinner, nothing else — resulting in less food waste.HelloFresh also prides itself on
+                            minimizing our carbon footprint. In fact, ours is 25% lower compared to store-bought
+                            groceries thanks to our pre-portioned ingredients and the streamlined value chain.* **
+                            According to a comparative life cycle impact study by the University of Michigan*
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            How much does HelloFresh cost?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The cost of HelloFresh’s meal service starts at $7.49 per serving. In other words, you spend
+                            only $53.94 per week for 3 recipes a week for 2 people. Just check out our street cred on
+                            Trustpilot, where our customers swear by our service. For instance, one customer claims: 'I
+                            LOVE HelloFresh... We saved over $300 a month in groceries because we always bought too much
+                            food.' Or, as another customer puts it: ' We save over $100 a week by not going out to eat
+                            or even stopping by the grocery store to grab things for dinner!' Of course, each customer
+                            experience is different. We charge weekly and not monthly. We make it easier for you to
+                            manage your food budget and expenses. Our meal kit service is so convenient you can pause
+                            and reactivate your account as you please.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Can I skip a week of delivery?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Yes. With our meal subscription service, you are always in control. If you don’t want to
+                            receive a meal kit on a particular week, you don’t have to. To avoid charges when skipping a
+                            week, you simply need to “pause” your meal kit order or cancel your meal subscription after
+                            logging into your account.Pausing or canceling your meal delivery orders should be done by
+                            11:59 pm PST, five days before your next delivery schedule. Note that you will be charged on
+                            all orders that you failed to cancel before the cut-off date.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 footer-container">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-lg-3 mx-auto mt-3">
+
+                    <h5 class="mb-3 text-warning"> Hello Fresh </h5>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Recipes</a></p>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Students</a></p>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Hero Discount</a></p>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Delivery Options</a></p>
+                </div>
+                <div class="col-md-3 col-lg-3 mx-auto mt-3">
+
+                    <h5 class="mb-4 text-warning"> About Company </h5>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">HelloFresh Group</a></p>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Press</a></p>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Career</a></p>
+                </div>
+                <div class="col-md-3 col-lg-3 mx-auto mt-3">
+
+                    <h5 class="mb-4 text-warning">Contact Us</h5>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Help Center & FAQ</a></p>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Partnership Inquiries</a></p>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Information</a></p>
+                    <p> <a href="#" class="text-white" style="text-decoration: none;">Corporate Sales</a></p>
+                </div>
+                <div class="col-md-3 col-lg-3  mx-auto mt-3">
+
+                    <h5 class="mb-4 text-warning"> Follow us on</h5>
+                    <div class="text-md-right">
+                        <ul class="list-unstyled list-inline">
+
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font: 23px;"><i class="fab fa-whatsapp"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font: 23px;"><i class="fab fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font: 23px;"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row text-center">
+                <div class="col-md-7 col-lg-12">
+                    <p>&copy;2023
+                        <a href="#" style="text-decoration: none;"><strong class="text-warning">Lungbuiyang</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl carousel .js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
     </script>
 
 
+    <script src="stylejava.js"></script>
+
 </body>
+
 </html>

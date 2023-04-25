@@ -1,0 +1,162 @@
+/* :root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}  */
+body{
+    background-color: white;
+    color: black;
+}
+.mydark{
+    background-color: black;
+    color: white;
+}
+
+/* navbar section */
+.navbar{
+    top: 0;
+    position: sticky; 
+    z-index: 1000;
+    height: 70px;
+    background-color: white;
+    
+}
+.navtext{
+    font-size: 17px;
+    font-weight: bold;
+}
+.nav-but a{
+    margin-right: 5px;
+    border: solid green 1px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.nav-but a:hover{
+    background-color: green;
+    color: white;
+}
+
+.navbar-brand img{
+    width: 100px;
+    height: 30px;
+}
+.navbar .navbar-nav .nav-item a{
+    padding: 20px;
+    color: black;
+}
+.fa-shopping{
+    font-size: 25px;
+    margin-right: 25px;
+    margin-top: 8px;
+    color: black;
+}
+.navlist li{
+    align-items: center;
+}
+/* dark mode */
+
+.fa-lightbulb{
+    font-size: 20px;
+    margin-right: 2px;
+    margin-top: 8px;
+    color: gold;
+    background-color: white;
+}
+
+
+/* carousel section */
+.carousel-inner{
+    z-index: 0;
+}
+.carouSlide h5{
+    margin-top: -35%;
+    font-size: 30px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: rgb(17, 19, 19);
+}
+.carouSlide p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(14, 15, 15);
+    line-height: 40px;
+}
+
+
+/* Why HelloFresh section */
+.card-container{
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+.card-title,.card-text{
+    color: black;
+}
+.card-icon{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding: 30px;
+    border-radius: 50%;
+    isolation: isolate;
+}
+.card-heading{
+    text-align: center;
+    padding: 50px;;
+}
+.whyHelloCard:hover{
+    background-color: black;
+    background-color: darkgray;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in;
+    color: white;
+}
+
+/* plan section */
+.plan-container{
+    margin-top: 100px;
+    padding: 40px;
+}
+/* .plan-text{
+   text-align: center;
+} */
+.plan-btn{
+    margin-top: 15px;
+}
+
+/* menu section */
+.menu-container{     
+    margin-top: 100px;
+    z-index: 1;
+}
+.menu-container .menu-heading{
+    text-align: center;
+}
+.menu-para{
+    text-align: center;
+}
+.item img{
+    height: 250px;
+}
+.CDescription{
+    color: black;
+    text-align: center;
+}
+/* accordion section */
+.accordion-container{
+    margin-top: 100px;
+    padding: 40px;
+}
+.accor-heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* footer section  */
+
+.footer-container{
+    margin-top: 100px;
+}
