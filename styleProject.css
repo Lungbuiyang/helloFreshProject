@@ -5,7 +5,54 @@
 .dark-theme{
     --primary-color: #000106;
     --secondary-color: #fff;
-}  */
+}  */ 
+
+/* pop up */
+.popup{
+    height: 340px;
+    width: 580px;
+    background-color: rgb(23, 139, 23);
+    z-index: 10000;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 28%;
+   text-align: center;
+   /* visibility: hidden; */
+}
+.popup h1,h2{
+   color: white;
+}
+.popup button{
+   display: block;
+   margin:  0 0 20px auto;
+   background-color: transparent;
+   font-size: 30px;
+   color: #c5c5c5;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.popup p{
+   font-size: 20px;
+   text-align: center;
+   margin: 20px 20px;
+   line-height: 25px;
+   color: #ffffff;
+}
+.a{
+   border-radius: 10px;
+   display: block;
+   width: 150px;
+   position: relative;
+   margin: 40px auto;
+   text-align: center;
+   background-color: #074057;
+   color: #ffffff;
+   text-decoration: none;
+   padding: 5px 0;
+}
+
+/* dark mode */
 body{
     background-color: white;
     color: black;
@@ -20,7 +67,6 @@ body{
     top: 0;
     position: sticky; 
     z-index: 1000;
-    height: 70px;
     background-color: white;
     
 }
@@ -159,4 +205,38 @@ body{
 
 .footer-container{
     margin-top: 100px;
+}
+
+/* media query for coupon pop up */
+@media (max-width: 570px) {
+    .popup{
+        height: 420px;
+        width: 275px;
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+}
+@media(max-width: 700px) and (min-width: 571px){
+    .popup{
+        height: 420px;
+        width: 350px;
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+}
+@media(max-width: 900px) and (min-width: 701px){
+    .popup{
+        height: 360px;
+        width: 450px;
+        margin-top: 16%;
+        margin-left: 20%;
+    }
+}
+@media(max-width: 1100px) and (min-width: 901px){
+    .popup{
+        height: 340px;
+        width: 550px;
+        margin-top: 15%;
+        margin-left: 20%;
+    }
 }
